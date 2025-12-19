@@ -6,6 +6,9 @@
 
 An intelligent traffic management system that dynamically adjusts highway lane configurations using AI-powered congestion detection and a movable median barrier. This project addresses the **Engineering Grand Challenge** of urban infrastructure optimization and traffic congestion mitigation.
 
+![CARLA Simulation](images/simulation_screenshot.png)
+*Real-time traffic simulation in CARLA showing the dynamic median traffic management system*
+
 ## 🎯 Overview
 
 Traditional highway infrastructure suffers from directional traffic imbalances—morning rush hours congest one direction while the opposite remains empty, and vice versa in the evening. This system solves that problem by:
