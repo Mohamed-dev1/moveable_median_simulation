@@ -89,26 +89,6 @@ In the web dashboard:
 
 ---
 
-## 📊 UNDERSTANDING YOUR RESULTS
-
-
-### Metric 1: Trip Time Improvement (4.7%)
-- **What it means**: How much faster vehicles travel
-- **Baseline**: 57.9 seconds (3 lanes, congested)
-- **Improved**: 55.2 seconds (4 lanes, flowing)
-- **Saved**: 2.7 seconds per vehicle
-- **Formula**: BPR function from Highway Capacity Manual
-
-### Metric 2: Fuel Reduction (42.9%)
-- **What it means**: How much fuel is saved
-- **Baseline**: 0.217 L per vehicle (congested, stop-and-go)
-- **Improved**: 0.124 L per vehicle (flowing, fewer stops)
-- **Saved**: 0.093 L per vehicle
-- **CO₂**: 0.215 kg saved per vehicle
-- **Annual**: 78.5 tons CO₂ saved (1000 vehicles/day)
-
----
-
 ## 🔄 RUNNING MULTIPLE SIMULATIONS
 
 To see trends over time:
