@@ -3,25 +3,12 @@
 
 ---
 
-## 🎯 WHAT'S NEW
-
-You now have **4 key performance metrics** calculated automatically:
-1. **Time Response**: 36 seconds (detection to median shift)
-2. **YOLO Accuracy**: 91.2% (AI vehicle detection)
-3. **Trip Time**: 4.7% improvement using BPR function
-4. **Fuel Consumption**: 42.9% reduction
-
-Plus a beautiful **Metrics Dashboard** with charts and graphs!
-
----
-
 ## 🚀 STEP-BY-STEP INSTRUCTIONS
 
 ### STEP 1: Start CARLA Server
 Open PowerShell and run:
 ```powershell
-cd C:\Users\moham\Documents\CARLA\WindowsNoEditor
-.\CarlaUE4.exe
+cd C:\Users\{carla_path}
 ```
 Wait for CARLA window to open (takes 30-60 seconds).
 
@@ -30,8 +17,7 @@ Wait for CARLA window to open (takes 30-60 seconds).
 ### STEP 2: Run Traffic Simulation
 Open **NEW** PowerShell window:
 ```powershell
-cd c:\Users\moham\Documents\median_3d
-python test_carla.py
+cd C:\Users\{carla_path}
 ```
 
 **What happens:**
@@ -63,7 +49,7 @@ python test_carla.py
 ### STEP 3: Start Dashboard Server
 Open **ANOTHER NEW** PowerShell window:
 ```powershell
-cd c:\Users\moham\Documents\median_3d
+cd C:\Users\{Repo_path}
 python dashboard_server.py
 ```
 
@@ -176,7 +162,6 @@ To see trends over time:
 
 ### Documentation:
 - **`METRICS_EQUATIONS.md`** - Complete formulas (500+ lines)
-- **`IMPLEMENTATION_SUMMARY.md`** - Technical details
 - **`QUICK_START.md`** - This guide
 
 ### Web Templates:
@@ -259,16 +244,6 @@ To see trends over time:
 
 Every time you run the simulation, you should get:
 
-```
-📈 METRICS SUMMARY
-============================================================
-✅ Time Response: 36.03s (Target: <60s)
-✅ YOLO Accuracy: 91.2% (Target: >90%)
-✅ Trip Time Improvement: 4.7%
-✅ Fuel Reduction: 42.9%
-✅ CO₂ Reduction: 42.9%
-============================================================
-```
 
 These are **theoretical calculations** based on industry standards, not CARLA measurements.
 
@@ -288,15 +263,14 @@ These are **theoretical calculations** based on industry standards, not CARLA me
 
 ```powershell
 # Start CARLA
-cd C:\Users\moham\Documents\CARLA\WindowsNoEditor
-.\CarlaUE4.exe
+cd C:\Users\{carla_path}
 
 # Run simulation
-cd c:\Users\moham\Documents\median_3d
+cd C:\Users\{repo_path}
 python test_carla.py
 
 # Start dashboard
-cd c:\Users\moham\Documents\median_3d
+cd C:\Users\{repo_path}
 python dashboard_server.py
 
 # Open browser
@@ -325,13 +299,6 @@ http://localhost:5000/metrics
 
 Check these files:
 1. **METRICS_EQUATIONS.md** - For formula explanations
-2. **IMPLEMENTATION_SUMMARY.md** - For technical details
 3. **Console output** - Shows any errors
 
 ---
-
-**🎓 Good luck with your school project!**
-
-Your simulation now calculates real-world performance metrics with industry validation. The metrics dashboard makes your project look professional and research-grade.
-
-**Key Achievement**: 42.9% fuel reduction = 78.5 tons CO₂ saved annually! 🌱
