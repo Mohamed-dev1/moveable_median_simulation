@@ -28,17 +28,15 @@ cd C:\Users\{carla_path}
 
 **At the end, you'll see:**
 ```
-📊 CALCULATING PERFORMANCE METRICS...
+CALCULATING PERFORMANCE METRICS...
 ============================================================
-⏱️  Time Response: 36.03 seconds
-🎯 YOLO Detection Accuracy: 91.2%
-🚗 Trip Time (Baseline 3-lane): 57.90 seconds
-🚗 Trip Time (Improved 4-lane): 55.20 seconds
-   ➜ Time Saved: 2.70 seconds (4.7% improvement)
-⛽ Fuel Consumption (Baseline): 0.2170 L
-⛽ Fuel Consumption (Improved): 0.1240 L
-   ➜ Fuel Saved: 0.0930 L (42.9% reduction)
-   ➜ CO₂ Reduced: 0.2150 kg (42.9% reduction)
+Trip Time (Baseline 3-lane): {} seconds
+Trip Time (Improved 4-lane): {} seconds
+   ➜ Time Saved: {} seconds ({} improvement)
+Fuel Consumption (Baseline): {} L
+Fuel Consumption (Improved): {} L
+   ➜ Fuel Saved: {} L ({}reduction)
+   ➜ CO₂ Reduced: {} ({} reduction)
 ✅ Metrics saved to simulation_results.json
 ```
 
@@ -63,8 +61,6 @@ python dashboard_server.py
  Starting server on http://localhost:5000
  Login credentials:
    - admin / admin123
-   - student / student123
-   - observer / observer123
 ============================================================
 ```
 
@@ -95,28 +91,15 @@ In the web dashboard:
 
 ## 📊 UNDERSTANDING YOUR RESULTS
 
-### Metric 1: Time Response (36 seconds)
-- **What it means**: How fast the system reacts
-- **Target**: Under 60 seconds ✅
-- **Breakdown**:
-  - 1.0s to count vehicles
-  - 0.03s for YOLO AI to process
-  - 35.0s for physical barrier to move
 
-### Metric 2: YOLO Accuracy (91.2%)
-- **What it means**: How accurate is AI vehicle detection
-- **Target**: Over 90% ✅
-- **Real-world**: Based on YOLOv8 performance
-- **Components**: 94% detection × 98% counting × 99% logic
-
-### Metric 3: Trip Time Improvement (4.7%)
+### Metric 1: Trip Time Improvement (4.7%)
 - **What it means**: How much faster vehicles travel
 - **Baseline**: 57.9 seconds (3 lanes, congested)
 - **Improved**: 55.2 seconds (4 lanes, flowing)
 - **Saved**: 2.7 seconds per vehicle
 - **Formula**: BPR function from Highway Capacity Manual
 
-### Metric 4: Fuel Reduction (42.9%)
+### Metric 2: Fuel Reduction (42.9%)
 - **What it means**: How much fuel is saved
 - **Baseline**: 0.217 L per vehicle (congested, stop-and-go)
 - **Improved**: 0.124 L per vehicle (flowing, fewer stops)
@@ -209,53 +192,8 @@ To see trends over time:
 3. Restart dashboard server
 
 ### Problem: Metrics seem wrong
-**Solution**: This is expected! These are theoretical calculations based on:
 - Standard BPR function (α=0.15, β=4)
-- YOLOv8 benchmark accuracy (94%)
 - Industry fuel consumption models
-- Not real CARLA measurements (CARLA doesn't track fuel)
-
----
-
-## 📈 FOR YOUR SCHOOL PROJECT
-
-### What to present:
-1. **Show metrics dashboard** (looks professional!)
-2. **Explain 4 metrics** (use METRICS_EQUATIONS.md)
-3. **Demonstrate charts** (visual impact)
-4. **Compare baseline vs improved** (4.7% time, 42.9% fuel)
-5. **Annual impact**: 78.5 tons CO₂ saved
-
-### Key talking points:
-- ✅ Real-world YOLO accuracy (91.2%)
-- ✅ Industry-standard BPR function
-- ✅ EPA-validated fuel model
-- ✅ 36-second response time (under 60s target)
-- ✅ 42.9% fuel reduction = significant environmental impact
-
-### Documents to reference:
-- **METRICS_EQUATIONS.md** - Show complete calculations
-- **IMPLEMENTATION_SUMMARY.md** - Technical validation
-- **Charts on dashboard** - Visual proof
-
----
-
-## 🎯 EXPECTED RESULTS
-
-Every time you run the simulation, you should get:
-
-
-These are **theoretical calculations** based on industry standards, not CARLA measurements.
-
----
-
-## 💡 TIPS
-
-1. **Run multiple simulations** to populate history table
-2. **Take screenshots** of metrics dashboard for your report
-3. **Print METRICS_EQUATIONS.md** to show your professor
-4. **Use different login accounts** (admin, student, observer) to test
-5. **Export simulation_results.json** for backup
 
 ---
 
