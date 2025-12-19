@@ -1,0 +1,386 @@
+[
+  {
+    "session_id": "20251205_140043",
+    "simulation_duration_seconds": 22.05000000000018,
+    "total_vehicles": 171,
+    "metrics": {
+      "time_response_seconds": 6.88,
+      "time_response_breakdown": {
+        "detection_seconds": 1.0,
+        "yolo_processing_seconds": 0.03,
+        "median_movement_seconds": 6.88
+      },
+      "yolo_accuracy_percent": 91.2,
+      "trip_time_baseline_minutes": 51.97,
+      "trip_time_improved_minutes": 49.88,
+      "trip_time_baseline_seconds": 3118.3,
+      "trip_time_improved_seconds": 2992.6,
+      "trip_time_saved_minutes": 2.1,
+      "trip_time_saved_seconds": 125.7,
+      "trip_time_improvement_percent": 4.03,
+      "fuel_baseline_liters": 0,
+      "fuel_improved_liters": 0,
+      "fuel_saved_liters": 0,
+      "fuel_improvement_percent": 0,
+      "co2_baseline_kg": 0,
+      "co2_improved_kg": 0,
+      "co2_saved_kg": 0
+    },
+    "fuel_breakdown_baseline": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "fuel_breakdown_improved": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "conditions": {
+      "baseline_mode": "3-3 lanes",
+      "improved_mode": "4-2 lanes (dynamic)",
+      "baseline_capacity_veh_per_hour": 200,
+      "improved_capacity_veh_per_hour": 266,
+      "free_flow_time_minutes": 48.891984756507355,
+      "lane_capacity_veh_per_hour": 1000
+    },
+    "simulation_stats": {
+      "duration_seconds": 22.05000000000018,
+      "mode_changes": 1,
+      "time_in_3_3_mode": 19.0,
+      "time_in_4_2_mode": 2.0,
+      "avg_speed_3_3_kmh": 0.0,
+      "avg_speed_4_2_kmh": 0.0,
+      "congestion_events": 21,
+      "total_data_points": 21,
+      "median_shift_duration_actual": 6.88
+    },
+    "timestamp": "2025-12-05T14:00:43.532824"
+  },
+  {
+    "session_id": "20251205_140307",
+    "simulation_duration_seconds": 55.54999999999898,
+    "total_vehicles": 181,
+    "metrics": {
+      "time_response_seconds": 6.88,
+      "time_response_breakdown": {
+        "detection_seconds": 1.0,
+        "yolo_processing_seconds": 0.03,
+        "median_movement_seconds": 5.85
+      },
+      "yolo_accuracy_percent": 91.2,
+      "trip_time_baseline_minutes": 37.07,
+      "trip_time_improved_minutes": 35.07,
+      "trip_time_baseline_seconds": 2224.0,
+      "trip_time_improved_seconds": 2104.3,
+      "trip_time_saved_minutes": 2.0,
+      "trip_time_saved_seconds": 119.7,
+      "trip_time_improvement_percent": 5.38,
+      "fuel_baseline_liters": 0,
+      "fuel_improved_liters": 0,
+      "fuel_saved_liters": 0,
+      "fuel_improvement_percent": 0,
+      "co2_baseline_kg": 0,
+      "co2_improved_kg": 0,
+      "co2_saved_kg": 0
+    },
+    "fuel_breakdown_baseline": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "fuel_breakdown_improved": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "conditions": {
+      "baseline_mode": "3-3 lanes",
+      "improved_mode": "4-2 lanes (dynamic)",
+      "baseline_capacity_veh_per_hour": 200,
+      "improved_capacity_veh_per_hour": 266,
+      "free_flow_time_minutes": 34.133662104715185,
+      "lane_capacity_veh_per_hour": 1000
+    },
+    "simulation_stats": {
+      "duration_seconds": 55.54999999999898,
+      "mode_changes": 1,
+      "time_in_3_3_mode": 19.0,
+      "time_in_4_2_mode": 35.0,
+      "avg_speed_3_3_kmh": 0.0,
+      "avg_speed_4_2_kmh": 0.0,
+      "congestion_events": 54,
+      "total_data_points": 54,
+      "median_shift_duration_actual": 5.85
+    },
+    "timestamp": "2025-12-05T14:03:07.428970"
+  },
+  {
+    "session_id": "20251205_141034",
+    "simulation_duration_seconds": 8.499999999999986,
+    "total_vehicles": 146,
+    "metrics": {
+      "time_response_seconds": 6.88,
+      "time_response_breakdown": {
+        "detection_seconds": 1.0,
+        "yolo_processing_seconds": 0.03,
+        "median_movement_seconds": 5.32
+      },
+      "yolo_accuracy_percent": 91.2,
+      "trip_time_baseline_minutes": 73.19,
+      "trip_time_improved_minutes": 60.77,
+      "trip_time_baseline_seconds": 4391.6,
+      "trip_time_improved_seconds": 3646.3,
+      "trip_time_saved_minutes": 12.42,
+      "trip_time_saved_seconds": 745.3,
+      "trip_time_improvement_percent": 16.97,
+      "fuel_baseline_liters": 0,
+      "fuel_improved_liters": 0,
+      "fuel_saved_liters": 0,
+      "fuel_improvement_percent": 0,
+      "co2_baseline_kg": 0,
+      "co2_improved_kg": 0,
+      "co2_saved_kg": 0
+    },
+    "fuel_breakdown_baseline": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "fuel_breakdown_improved": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "conditions": {
+      "baseline_mode": "3-3 lanes",
+      "improved_mode": "4-2 lanes (dynamic)",
+      "baseline_capacity_veh_per_hour": 200,
+      "improved_capacity_veh_per_hour": 266,
+      "free_flow_time_minutes": 54.93726835597809,
+      "lane_capacity_veh_per_hour": 1000
+    },
+    "simulation_stats": {
+      "duration_seconds": 8.499999999999986,
+      "mode_changes": 0,
+      "time_in_3_3_mode": 8.0,
+      "time_in_4_2_mode": 0,
+      "avg_speed_3_3_kmh": 0.0,
+      "avg_speed_4_2_kmh": 0.0,
+      "congestion_events": 8,
+      "total_data_points": 8,
+      "median_shift_duration_actual": 5.32
+    },
+    "timestamp": "2025-12-05T14:10:34.459152"
+  },
+  {
+    "session_id": "20251205_141151",
+    "simulation_duration_seconds": 29.000000000000277,
+    "total_vehicles": 154,
+    "metrics": {
+      "time_response_seconds": 6.88,
+      "time_response_breakdown": {
+        "detection_seconds": 1.0,
+        "yolo_processing_seconds": 0.03,
+        "median_movement_seconds": 5.85
+      },
+      "yolo_accuracy_percent": 91.2,
+      "trip_time_baseline_minutes": 20.61,
+      "trip_time_improved_minutes": 17.7,
+      "trip_time_baseline_seconds": 1236.6,
+      "trip_time_improved_seconds": 1061.8,
+      "trip_time_saved_minutes": 2.91,
+      "trip_time_saved_seconds": 174.9,
+      "trip_time_improvement_percent": 14.14,
+      "fuel_baseline_liters": 0,
+      "fuel_improved_liters": 0,
+      "fuel_saved_liters": 0,
+      "fuel_improvement_percent": 0,
+      "co2_baseline_kg": 0,
+      "co2_improved_kg": 0,
+      "co2_saved_kg": 0
+    },
+    "fuel_breakdown_baseline": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "fuel_breakdown_improved": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "conditions": {
+      "baseline_mode": "3-3 lanes",
+      "improved_mode": "4-2 lanes (dynamic)",
+      "baseline_capacity_veh_per_hour": 200,
+      "improved_capacity_veh_per_hour": 266,
+      "free_flow_time_minutes": 16.327225486736214,
+      "lane_capacity_veh_per_hour": 1000
+    },
+    "simulation_stats": {
+      "duration_seconds": 29.000000000000277,
+      "mode_changes": 1,
+      "time_in_3_3_mode": 19.0,
+      "time_in_4_2_mode": 9.0,
+      "avg_speed_3_3_kmh": 0.0,
+      "avg_speed_4_2_kmh": 0.0,
+      "congestion_events": 28,
+      "total_data_points": 28,
+      "median_shift_duration_actual": 5.85
+    },
+    "timestamp": "2025-12-05T14:11:51.606716"
+  },
+  {
+    "session_id": "20251206_140624",
+    "simulation_duration_seconds": 63.29999999999854,
+    "total_vehicles": 148,
+    "metrics": {
+      "time_response_seconds": 6.88,
+      "time_response_breakdown": {
+        "detection_seconds": 1.0,
+        "yolo_processing_seconds": 0.03,
+        "median_movement_seconds": 5.85
+      },
+      "yolo_accuracy_percent": 91.2,
+      "trip_time_baseline_minutes": 32.54,
+      "trip_time_improved_minutes": 28.38,
+      "trip_time_baseline_seconds": 1952.6,
+      "trip_time_improved_seconds": 1702.6,
+      "trip_time_saved_minutes": 4.17,
+      "trip_time_saved_seconds": 250.0,
+      "trip_time_improvement_percent": 12.81,
+      "fuel_baseline_liters": 0,
+      "fuel_improved_liters": 0,
+      "fuel_saved_liters": 0,
+      "fuel_improvement_percent": 0,
+      "co2_baseline_kg": 0,
+      "co2_improved_kg": 0,
+      "co2_saved_kg": 0
+    },
+    "fuel_breakdown_baseline": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "fuel_breakdown_improved": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "conditions": {
+      "baseline_mode": "3-3 lanes",
+      "improved_mode": "4-2 lanes (dynamic)",
+      "baseline_capacity_veh_per_hour": 200,
+      "improved_capacity_veh_per_hour": 266,
+      "free_flow_time_minutes": 26.418564464594592,
+      "lane_capacity_veh_per_hour": 1000
+    },
+    "simulation_stats": {
+      "duration_seconds": 63.29999999999854,
+      "mode_changes": 1,
+      "time_in_3_3_mode": 19.0,
+      "time_in_4_2_mode": 42.0,
+      "avg_speed_3_3_kmh": 0.0,
+      "avg_speed_4_2_kmh": 0.0,
+      "congestion_events": 61,
+      "total_data_points": 61,
+      "median_shift_duration_actual": 5.85
+    },
+    "timestamp": "2025-12-06T14:06:24.111956"
+  },
+  {
+    "session_id": "20251219_213832",
+    "simulation_duration_seconds": 55.54999999999898,
+    "total_vehicles": 170,
+    "metrics": {
+      "time_response_seconds": 6.88,
+      "time_response_breakdown": {
+        "detection_seconds": 1.0,
+        "yolo_processing_seconds": 0.03,
+        "median_movement_seconds": 5.85
+      },
+      "yolo_accuracy_percent": 91.2,
+      "trip_time_baseline_minutes": 31.7,
+      "trip_time_improved_minutes": 26.26,
+      "trip_time_baseline_seconds": 1902.2,
+      "trip_time_improved_seconds": 1575.4,
+      "trip_time_saved_minutes": 5.45,
+      "trip_time_saved_seconds": 326.8,
+      "trip_time_improvement_percent": 17.18,
+      "fuel_baseline_liters": 0,
+      "fuel_improved_liters": 0,
+      "fuel_saved_liters": 0,
+      "fuel_improvement_percent": 0,
+      "co2_baseline_kg": 0,
+      "co2_improved_kg": 0,
+      "co2_saved_kg": 0
+    },
+    "fuel_breakdown_baseline": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "fuel_breakdown_improved": {
+      "idle_fuel_L": 0,
+      "cruise_fuel_L": 0,
+      "acceleration_fuel_L": 0,
+      "total_fuel_L": 0,
+      "fuel_rate_L_per_100km": 0,
+      "co2_emissions_kg": 0
+    },
+    "conditions": {
+      "baseline_mode": "3-3 lanes",
+      "improved_mode": "4-2 lanes (dynamic)",
+      "baseline_capacity_veh_per_hour": 200,
+      "improved_capacity_veh_per_hour": 266,
+      "free_flow_time_minutes": 23.698017529056706,
+      "lane_capacity_veh_per_hour": 1000
+    },
+    "simulation_stats": {
+      "duration_seconds": 55.54999999999898,
+      "mode_changes": 1,
+      "time_in_3_3_mode": 19.0,
+      "time_in_4_2_mode": 35.0,
+      "avg_speed_3_3_kmh": 0.0,
+      "avg_speed_4_2_kmh": 0.0,
+      "congestion_events": 54,
+      "total_data_points": 54,
+      "median_shift_duration_actual": 5.85
+    },
+    "timestamp": "2025-12-19T21:38:32.237079"
+  }
+]

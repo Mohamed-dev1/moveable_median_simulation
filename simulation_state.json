@@ -1,0 +1,29 @@
+{
+  "running": true,
+  "mode": "4-2",
+  "total_vehicles": 170,
+  "forward_vehicles": 60,
+  "backward_vehicles": 0,
+  "forward_speed": 0.0,
+  "backward_speed": 0.1,
+  "congestion_level": 100.0,
+  "time_elapsed": 55.499999999998984,
+  "median_position": -3.5,
+  "median_target": -3.5,
+  "is_moving": false,
+  "lane_data": {
+    "forward": [
+      43,
+      3,
+      5,
+      9
+    ],
+    "backward": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "last_update": 1766173112.2028692
+}
