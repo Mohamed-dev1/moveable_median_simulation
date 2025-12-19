@@ -13,87 +13,7 @@ This document contains the four key performance metrics with complete calculatio
 
 ---
 
-## 1. TIME RESPONSE
-
-**Definition**: Total time from congestion detection to complete median shift
-
-### Complete Time Response Equation:
-```
-T_response = T_detect + T_process + T_actuate
-
-Where:
-T_detect = Vehicle counting time (1.0 seconds)
-T_process = YOLO AI processing (0.03 seconds per frame)
-T_actuate = Physical movement time (Distance/Speed)
-```
-
-### Real-World Calculation:
-```
-T_detect = 1.0 seconds (count 15+ vehicles below 5 km/h threshold)
-T_process = 0.03 seconds (YOLOv8 real-time detection at 30 FPS)
-T_actuate = 3.5m / 0.10 m/s = 35 seconds (barrier movement)
-
-T_response_total = 1.0 + 0.03 + 35.0 = 36.03 seconds
-```
-
-### Industry Standard Compliance:
-- FHWA guideline: 30-60 seconds for dynamic traffic management
-- Our system: 36 seconds ✅ **WITHIN STANDARD**
-
-**Reference**: *Federal Highway Administration - Traffic Management Systems Guidelines, 2020*
-
----
-
-## 2. YOLO DETECTION ACCURACY
-
-**Definition**: Precision of AI vehicle detection system for counting vehicles
-
-### YOLO Detection Accuracy Formula:
-```
-Accuracy_detection = (TP + TN) / (TP + TN + FP + FN) × 100%
-
-Where:
-TP = True Positives (vehicles correctly detected)
-TN = True Negatives (non-vehicles correctly ignored)
-FP = False Positives (errors - detected non-vehicles)
-FN = False Negatives (missed vehicles)
-```
-
-### YOLOv8 Performance (COCO Dataset):
-```
-Object Detection Metrics:
-- mAP@50 (IoU 0.50): 89.7%
-- mAP@50-95 (IoU 0.50-0.95): 73.1%
-- Vehicle class precision: 92-95%
-- Real-time speed: 30-40 FPS
-```
-
-### System Accuracy Calculation:
-```
-Accuracy_system = Accuracy_YOLO × Accuracy_count × Accuracy_threshold
-
-Accuracy_YOLO = 0.94 (94% vehicle detection from YOLOv8 benchmarks)
-Accuracy_count = 0.98 (98% counting accuracy - tracking algorithm)
-Accuracy_threshold = 0.99 (99% threshold logic - 15 vehicles trigger)
-
-Accuracy_system = 0.94 × 0.98 × 0.99 = 0.9121 = 91.2%
-```
-
-### Expected Performance:
-| Metric | Value | Target | Status |
-|--------|-------|--------|--------|
-| Detection Accuracy | 94% | >90% | ✅ PASS |
-| System Accuracy | 91.2% | >85% | ✅ PASS |
-| False Positive Rate | 6% | <15% | ✅ PASS |
-| False Negative Rate | 3% | <10% | ✅ PASS |
-
-**References**: 
-- *Ultralytics YOLOv8 Documentation, 2024*
-- *"Real-time Traffic Vehicle Detection Using YOLO", IEEE Trans. ITS, 2023*
-
----
-
-## 3. TRIP TIME (BPR FUNCTION)
+## 1. TRIP TIME (BPR FUNCTION)
 
 **Definition**: Travel time calculation using Bureau of Public Roads congestion function
 
@@ -377,28 +297,10 @@ Annual savings = 33,945 × $1.50 = $50,918
 
 ---
 
-## SUMMARY TABLE
-
-| Metric | Formula | Baseline | Dynamic | Improvement | Target | Status |
-|--------|---------|----------|---------|-------------|--------|--------|
-| **Time Response** | T_detect + T_process + T_actuate | N/A | 36 sec | Within standard | <60 sec | ✅ PASS |
-| **YOLO Accuracy** | (TP+TN)/(Total) × 100% | N/A | 94% | Exceeds target | >90% | ✅ PASS |
-| **System Accuracy** | YOLO × Count × Logic | N/A | 91.2% | Exceeds target | >85% | ✅ PASS |
-| **Trip Time** | T₀ × [1 + α(V/C)^β] | 57.9 sec | 55.2 sec | 4.7% faster | Improve | ✅ PASS |
-| **Fuel Consumption** | Idle + Cruise + Accel | 0.217 L | 0.124 L | 42.9% saved | Reduce | ✅ PASS |
-| **CO₂ Emissions** | Fuel × 2.31 kg/L | 0.501 kg | 0.286 kg | 42.9% reduction | Reduce | ✅ PASS |
-
----
 
 ## CONSTANTS & PARAMETERS
 
 ```python
-# System Response
-YOLO_PROCESS_TIME = 0.03          # seconds (YOLOv8 at 30 FPS)
-DETECTION_TIME = 1.0              # seconds (count vehicles)
-MEDIAN_SPEED = 0.10               # m/s (barrier movement)
-MEDIAN_DISTANCE = 3.5             # meters (lateral shift)
-
 # BPR Function
 ALPHA = 0.15                      # BPR standard parameter
 BETA = 4                          # BPR standard parameter
@@ -413,10 +315,6 @@ FUEL_ENERGY = 34                  # MJ/L (gasoline)
 VEHICLE_MASS = 1500               # kg
 CO2_FACTOR = 2.31                 # kg CO₂ per liter
 
-# YOLO Detection
-YOLO_ACCURACY = 0.94              # 94%
-COUNT_ACCURACY = 0.98             # 98%
-THRESHOLD_ACCURACY = 0.99         # 99%
 ```
 
 ---
