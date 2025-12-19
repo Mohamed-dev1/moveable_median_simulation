@@ -10,17 +10,6 @@ An intelligent traffic management system that dynamically adjusts highway lane c
 
 Traditional highway infrastructure suffers from directional traffic imbalances—morning rush hours congest one direction while the opposite remains empty, and vice versa in the evening. This system solves that problem by:
 
-- **Real-time traffic analysis** using YOLOv8 computer vision
-- **Dynamic lane reconfiguration** (3-3 → 4-2 or 2-4 lanes)
-- **Automated median barrier movement** (responds in 7-38 seconds)
-- **Significant performance improvements** (5.6-22% trip time reduction)
-
-### Key Results
-- ✅ **System Response:** 6.88-38.5 seconds
-- ✅ **Trip Time Reduction:** 5.6-22.0% improvement
-- ✅ **Detection Accuracy:** 91.2% (YOLOv8)
-- ✅ **Economic Impact:** Potential $395B annual savings (scaled globally)
-
 ---
 
 ## 🚀 Features
@@ -187,23 +176,10 @@ The Bureau of Public Roads function calculates trip time based on traffic volume
 
 **Baseline (3-3 lanes):**
 - Capacity: 200 veh/h per direction
-- V/C ratio: 1.1-1.25 (over capacity)
 
 **Improved (4-2 lanes):**
 - Capacity: 267 veh/h (forward)
-- V/C ratio: 0.82-0.94 (under capacity)
 
-### AI Detection System
-- **Model:** YOLOv8 (simulated at 30 FPS)
-- **Detection accuracy:** 94%
-- **Count accuracy:** 98%
-- **Threshold accuracy:** 99%
-- **Overall system:** 91.2%
-
-### Median Movement
-- **Movement distance:** 3.5 meters (one lane width)
-- **Speed:** 0.10 m/s base (±15% variation)
-- **Duration:** 35 seconds nominal (30.4-41.2s actual)
 
 ---
 
@@ -218,31 +194,6 @@ Detailed documentation available:
 
 ---
 
-## Academic Context
-
-This project addresses the **NAE Grand Challenge: Restoring and Improving Urban Infrastructure** by:
-
-1. **Economic Impact**: Potential savings of $395 billion annually (global scale)
-2. **Environmental Benefit**: Reduced idling and emissions
-3. **Scalability**: Applicable to highways worldwide
-4. **Innovation**: First AI-powered dynamic median system
-
-
----
-
-## 🤝 Contributing
-
-**Real-world deployment**: Pilot program planning
-
-### How to Contribute
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
----
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -252,8 +203,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Authors
 
 **Mohamed Eltahawy**
-- Engineering Student
-- Focus: Transportation Infrastructure & AI
 
 ---
 
